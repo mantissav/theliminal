@@ -18,6 +18,7 @@ public class player : MonoBehaviour
     void Start()
     {
         Cursor.visible = false; //hide player's mouse
+        Cursor.lockState = CursorLockMode.Locked;
         player_body = GetComponent<Rigidbody>();
         speed_mul = walkspeed;
     }
