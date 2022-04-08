@@ -68,6 +68,7 @@ MonoBehaviour:
   camTrans: {fileID: 2590610904179608502}
   cam: {fileID: 2590610904179608497}
   playerBody: {fileID: 0}
+  team: {fileID: 0}
   walkAcceleration: 8
   runAcceleration: 12
   jumpSpeed: 200
@@ -197,6 +198,7 @@ MonoBehaviour:
   camTrans: {fileID: 0}
   cam: {fileID: 0}
   playerBody: {fileID: 0}
+  team: {fileID: 0}
   walkAcceleration: 8
   runAcceleration: 12
   jumpSpeed: 200
@@ -335,10 +337,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -2106161764300793749, guid: 6cb28876d8bc819478b749200c225088, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 555610c9d9e7fba428d674edf4c7b65e, type: 2}
     - target: {fileID: 919132149155446097, guid: 6cb28876d8bc819478b749200c225088, type: 3}
       propertyPath: m_Name
       value: player
       objectReference: {fileID: 0}
+    - target: {fileID: 8230552012146758911, guid: 6cb28876d8bc819478b749200c225088, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 555610c9d9e7fba428d674edf4c7b65e, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6cb28876d8bc819478b749200c225088, type: 3}
 --- !u!4 &4450253579795950439 stripped

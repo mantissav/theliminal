@@ -14,6 +14,7 @@ public class ExteriorGenerater : MonoBehaviour //this class is simple enought th
     // Start is called before the first frame update
     void Start() //everything done in here so on game start it generates only once
     {
+        float offset = Random.RandomRange(0, 1000);
         //too lazy to name these any better
         TerrainData terrain = terrain_t.terrainData;
         terrain.heightmapResolution = width + 1;
@@ -22,7 +23,7 @@ public class ExteriorGenerater : MonoBehaviour //this class is simple enought th
         //generate random 'heights'
         for (int i = 0; i < width; i++)
             for (int j = 0; j < width; j++)
-                heights[j,i] = Mathf.PerlinNoise((float)i / width * scale, (float)j / width * scale);
+                heights[j,i] = Mathf.PerlinNoise((float)i / width * scale + offset, (float)j / width * scale + offset);
         terrain.SetHeights(0, 0, heights);
         decorater.Decorate(terrain_t);
     }
