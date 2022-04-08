@@ -6,6 +6,7 @@ public class NormalCaliber : Bullet
 {
     public override void OnArmorHit(Armor armor) {
         Debug.Log("Hit armor");
+        armor.Damage(this, directDamage);
     }
     public override void OnArmorVehicleHit(Vehicle vehicle, Armor armor) {
         Debug.Log("Hit vehicle armor");

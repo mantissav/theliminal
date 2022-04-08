@@ -59,14 +59,16 @@
     <Compile Include="Assets\Scripts\Bullet.cs" />
     <Compile Include="Assets\Scenes\Decorator.cs" />
     <Compile Include="Assets\Scenes\ExteriorGenerater.cs" />
+    <Compile Include="Assets\Scripts\bullets\NormalCaliber.cs" />
+    <Compile Include="Assets\Scripts\Vehicle.cs" />
     <Compile Include="Assets\Scripts\Gun.cs" />
     <Compile Include="Assets\Scenes\fow_10\FowDecorator.cs" />
     <Compile Include="Assets\Scripts\Player.cs" />
     <Compile Include="Assets\Scenes\Properties.cs" />
-    <Compile Include="Assets\Scripts\Vehicle.cs" />
     <Compile Include="Assets\Scripts\Armor.cs" />
     <Compile Include="Assets\Scripts\guns\Rifle.cs" />
-    <Compile Include="Assets\Scripts\bullets\NormalCaliber.cs" />
+    <Compile Include="Assets\Scripts\Team.cs" />
+    <Compile Include="Assets\Scripts\armor\BasicArmor.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

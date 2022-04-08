@@ -7,6 +7,7 @@ public class Player : MonoBehaviour
 {
     public Transform camTrans; public Camera cam;
     public Rigidbody playerBody;
+    public Team team; //the team of this player
 
     public float walkAcceleration = 8, runAcceleration = 12, jumpSpeed = 200;
     //there is a difference between acceleration and speed btw
