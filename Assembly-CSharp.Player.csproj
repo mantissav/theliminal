@@ -56,8 +56,17 @@
     <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\player.cs" />
-    <Compile Include="Assets\shoot.cs" />
+    <Compile Include="Assets\Scripts\Bullet.cs" />
+    <Compile Include="Assets\Scenes\Decorator.cs" />
+    <Compile Include="Assets\Scenes\ExteriorGenerater.cs" />
+    <Compile Include="Assets\Scripts\Gun.cs" />
+    <Compile Include="Assets\Scenes\fow_10\FowDecorator.cs" />
+    <Compile Include="Assets\Scripts\Player.cs" />
+    <Compile Include="Assets\Scenes\Properties.cs" />
+    <Compile Include="Assets\Scripts\Vehicle.cs" />
+    <Compile Include="Assets\Scripts\Armor.cs" />
+    <Compile Include="Assets\Scripts\guns\Rifle.cs" />
+    <Compile Include="Assets\Scripts\bullets\NormalCaliber.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
