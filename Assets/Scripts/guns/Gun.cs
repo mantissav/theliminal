@@ -3,12 +3,13 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public abstract class Gun : MonoBehaviour //all other guns should inheirt from this class
+//inheirted from 'Tool' as they are kept in inventory and are not consumables
+//IMPORTANT: THIS CLASS OVERRIDES 'WhileHeld'
+public abstract class Gun : Tool //all other guns should inheirt from this class
 {
     //all guns need these things
     public Transform barrel;
-    public GameObject bullet;
-    public Player player;
+    public GameObject bullet; //bullet that this gun fires
     public Text currentMagText, totalAmmoCurrentText; //should be in the 'ui' canvas
 
     //base gun properties, other guns should add on to this
@@ -20,29 +21,30 @@ public abstract class Gun : MonoBehaviour //all other guns should inheirt from t
     protected uint currentMag, ammoCurrent;
     protected Rigidbody playerBody;
     // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
         //so there are no weird errors upon spawning, if this function is overriden this has to be done
         ammoCurrent = maxAmmo - maxMag;
         currentMag = maxMag;
         //override functions should do this as well
-        playerBody = player.GetComponent<Rigidbody>();
+        playerBody = owner.GetComponent<Rigidbody>();
     }
 
     abstract public void Reload(); //called in 'base' Update method, this is just to structure things a bit better
-    //movement speed is passed in so it is imposssible to 'catch up' with your own bullets
-    abstract public void Fire(); //called in 'base' Update method when mouse is pressed down; not when held
-
+    //fire
+    abstract public void Fire();
     //any other complex behavior required the overriding of Update
-
-    //do 'shoot checking' in Update so players don't expierience any delay when reloading or shooting
-
-    //'base' update method that calls the other abstract functions, this just makes things a bit easier for quick guns
-    void Update()
+    public override void WhileHeld() 
     {
         //update the ui
         currentMagText.text = currentMag.ToString();
         totalAmmoCurrentText.text = ammoCurrent.ToString();
+
+        //NOTE: Only use mousebuttondown for semi auto, for full auto figure out time thing to shoot at proper firerate
+        if (Input.GetMouseButtonDown(0) && currentMag > 0) //if left mouse down, shoot
+        {
+            Fire();
+        }
         //reload
         if (Input.GetKey(KeyCode.R))
         {
@@ -51,11 +53,5 @@ public abstract class Gun : MonoBehaviour //all other guns should inheirt from t
             currentMag = maxMag;
             Reload();
         }
-        //NOTE: Only use mousebuttondown for semi auto, for full auto figure out time thing to shoot at proper firerate
-        if (Input.GetMouseButtonDown(0) && currentMag > 0) //if left mouse down, shoot
-        {
-            Fire();
-        }
-
     }
 }

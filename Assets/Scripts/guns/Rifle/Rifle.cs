@@ -15,4 +15,9 @@ public class Rifle : Gun
             Random.RandomRange(0, 0.01f), Random.RandomRange(0, 0.01f))) * muzzleVelocity; //bullets are defined to have a rigidbody at least, and not sure why it is backwords transform
         currentMag -= 1;
     }
+
+    public override void Drop() //didn't enable dropping yet so this is here so C# is quiet
+    {
+        throw new System.NotImplementedException();
+    }
 }

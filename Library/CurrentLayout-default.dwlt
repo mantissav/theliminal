@@ -19,9 +19,9 @@ MonoBehaviour:
     width: 1920
     height: 997
   m_ShowMode: 4
-  m_Title: Scene
+  m_Title: Game
   m_RootView: {fileID: 6}
-  m_MinSize: {x: 875, y: 300}
+  m_MinSize: {x: 875, y: 542}
   m_MaxSize: {x: 10000, y: 10000}
   m_Maximized: 1
 --- !u!114 &2
@@ -48,7 +48,7 @@ MonoBehaviour:
   m_MinSize: {x: 677, y: 492}
   m_MaxSize: {x: 14001, y: 14042}
   vertical: 0
-  controlID: 21
+  controlID: 62
 --- !u!114 &3
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -226,7 +226,7 @@ MonoBehaviour:
   m_MinSize: {x: 402, y: 492}
   m_MaxSize: {x: 10001, y: 14042}
   vertical: 1
-  controlID: 26
+  controlID: 71
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -251,7 +251,7 @@ MonoBehaviour:
   m_MinSize: {x: 402, y: 221}
   m_MaxSize: {x: 8002, y: 4021}
   vertical: 0
-  controlID: 27
+  controlID: 72
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -343,22 +343,22 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scripts
+    - Assets/Scripts/guns/Rifle
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Scripts
+  - Assets/Scripts/guns/Rifle
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\Light\source\repos\theliminal
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 32400000
-    m_LastClickedID: 16434
-    m_ExpandedIDs: 000000002240000030400000324000003440000000ca9a3b
+    m_SelectedIDs: 92530000
+    m_LastClickedID: 21394
+    m_ExpandedIDs: 00000000e85200004e53000050530000545300005853000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -386,7 +386,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 0000000022400000
+    m_ExpandedIDs: 00000000e8520000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -509,7 +509,7 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: f6fafffffafaffff0afbffff10fbffff1afbffff52fbffff683c0000
+      m_ExpandedIDs: 7015feffc05cfffffc92ffff0ed8ffff0cfbffff1afbffff52fbffffa8500000c8500000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -569,9 +569,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 1052.2002, y: 43.11075, z: -15.429382}
+    m_Target: {x: 116.70179, y: 51.08847, z: 35.970654}
     speed: 2
-    m_Value: {x: 1052.2002, y: 43.11075, z: -15.429382}
+    m_Value: {x: 116.70179, y: 51.08847, z: 35.970654}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -618,13 +618,13 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: -0.07383507, y: 0.27198008, z: -0.020895539, w: -0.9592563}
+    m_Target: {x: -0.20598675, y: 0.1101049, z: -0.02329502, w: -0.97208416}
     speed: 2
-    m_Value: {x: -0.07383381, y: 0.27197543, z: -0.020895183, w: -0.95923996}
+    m_Value: {x: -0.20598224, y: 0.11010249, z: -0.02329451, w: -0.9720628}
   m_Size:
-    m_Target: 202.86176
+    m_Target: 11.249553
     speed: 2
-    m_Value: 202.86176
+    m_Value: 11.249553
   m_Ortho:
     m_Target: 0
     speed: 2
